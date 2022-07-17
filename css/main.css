@@ -4,3 +4,127 @@ Description: Professional Profile Page with hide/show feature built-in JavaScrip
 Author: Nathalya Menezes and Tallyta Triollo
 Version: 1.0
 */
+
+
+body {
+	background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+
+}
+
+.container {
+	color: #f2f2f2;
+	font-size: 16px;
+	font-family: product_sans, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #baa08e;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+	border-radius: 15px;
+ }
+
+
+/* Team Members start */
+
+#memberSection {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.memberPic {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.memberPic img {
+	filter: grayscale(80%);
+}
+
+.teamMember {
+	font-size: 30px;
+    color: #5c4b3f;
+	padding: 10px 0 10px 0;
+}
+
+/* Team Members end */
+
+
+/* Buttons Profile starts */
+
+.teamBtn {
+	background-color: #baa08e;
+	color: #fff;
+	border: none;
+	border-radius: 30px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 30px;
+	width: 200px;
+	height: 40px;
+}
+
+.teamBtn:hover {
+	cursor: pointer;
+	background-color: #5c4b3f;
+}
+
+/* Buttons Profile ends */
+
+/* Profile Team Members */
+
+#profileBox {
+	display: none;
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	z-index: 1;
+	background-color: #baa08e51;
+    border-radius: 30px;
+}
+
+#profileLightBox {
+	display: block;
+}
+
+#memberInfo {
+	width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	padding-top: 2em;
+}
+
+#memberInfo img {
+	width: 760px;
+	height: 520px;
+	border-radius: 20px;
+}
+
+#closeBtn {
+	color: white;
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+    margin-left: 850px;
+	background-color: #5c4b3f;
+	border-radius: 10px;
+}
+
+/* Profile Team Members end */

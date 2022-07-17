@@ -7,7 +7,36 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Dynamic Team Page</title>
 </head>
+
 <body>
-    
+    <main class="container">
+
+		<h1>Dynamic Team</h1>
+		<section id="memberSection">
+			
+			<div id="profileBox" class="hidden">
+				<div id="memberInfo">
+					<button id="closeBtn">X</button>
+					<img src="img/nath-profile.jpg" alt="Member Profile" id="memberProfile" data-member="nath">
+				</div>
+			</div>
+
+			<div class="memberPic">
+				<h2 class="teamMember">Nathálya Menezes</h2>
+					<img src="img/Nathalya-Menezes.jpg" alt="Nathálya Menezes" id="nathPic">
+						<button class="teamBtn" id="nathButton" data-member="nath">Learn about Nathálya</button>
+			</div>
+
+			<div class="memberPic">
+				<h2 class="teamMember">Tallyta Triolo</h2>
+					<img src="img/Tallyta-Triolo.jpg" alt="Tallyta Triolo">
+						<button class="teamBtn" id="tallyButton" data-member="tally">Learn about Tallyta</button>
+			</div>
+		</section>
+		
+	
+	</main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
