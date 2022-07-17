@@ -7,7 +7,7 @@ Version: 1.0
 
 
 body {
-	background-image: url(../images/background.jpg);
+	background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
@@ -65,10 +65,6 @@ h1 {
 
 /* Buttons Profile starts */
 
-.teamBtn:hover {
-	background-color: #5c4b3f;
-}
-
 .teamBtn {
 	background-color: #baa08e;
 	color: #fff;
@@ -81,17 +77,27 @@ h1 {
 	height: 40px;
 }
 
+.teamBtn:hover {
+	cursor: pointer;
+	background-color: #5c4b3f;
+}
+
 /* Buttons Profile ends */
 
 /* Profile Team Members */
 
-#profile{
+#profileBox {
+	display: none;
 	position: absolute;
 	width: 70%;
 	height: 70%;
 	z-index: 1;
 	background-color: #baa08e51;
     border-radius: 30px;
+}
+
+#profileLightBox {
+	display: block;
 }
 
 #memberInfo {

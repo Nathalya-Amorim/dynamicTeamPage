@@ -5,9 +5,9 @@ The goal is to create a simple webpage using JavaScript to show/hide the profile
 
 Steps:
 
-- Create design and layout of the page
-- Creating HTML page
-- Creating CSS
+- Create design and layout of the page - ok
+- Creating HTML page - ok
+- Creating CSS - ok
 - Createing a function show/hide in JavaScript
 - Testing the functionality
 
