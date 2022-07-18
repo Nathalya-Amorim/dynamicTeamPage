@@ -8,8 +8,9 @@ Steps:
 - Create design and layout of the page - ok
 - Creating HTML page - ok
 - Creating CSS - ok
-- Createing a function show/hide in JavaScript
+- Creating a function show/hide in JavaScript - ok
 - Testing the functionality
 
 ## BUGS 
+- Fix member info, not show image before button click
 
