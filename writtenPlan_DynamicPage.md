@@ -9,8 +9,16 @@ Steps:
 - Creating HTML page - ok
 - Creating CSS - ok
 - Creating a function show/hide in JavaScript - ok
-- Testing the functionality
+- Testing the functionality - ok 
 
 ## BUGS 
-- Fix member info, not show image before button click
+- Fix member info, not show image before button click: 
+    It was missing "display:none;" in #overlayPopup and we added this id:.show-overlayPopup { "display: block;}
+
+- When adding the addEventListener we were writing it incorrectely as shown below:   
+      nathButton.addEventListener('click', openOverlayPopUp ());
+
+- It was breaking the code because it was calling the function in advance.
+So the page was loading automatically with the pop up page opened.
+
 
