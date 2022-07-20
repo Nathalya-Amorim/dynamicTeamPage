@@ -9,29 +9,29 @@
 </head>
 
 <body>
-    <main class="container">
+    <main>
 
-		<h1>Dynamic Team Page</h1>
-		<h2>Click on each member's button<br>and learn more about us!</h2>
+		<h1>Dynamic Team</h1>
 		<section id="memberSection">
-			
 			<div class="memberPic">
-				<h3 class="hidden">Nathálya Menezes</h3>
-					<img src="img/Nathalya-Menezes.jpg" alt="Nathálya Menezes" id="nathPic">
-						<button class="teamBtn" id="nathButton" data-member="nath">Nathálya Menezes</button>
+				<h2>Nathálya Menezes</h2>
+					<img src="img/Nathalya-Menezes.jpg" alt="Nathálya Menezes">
+						<button id="nathButton" data-member="nath">Learn about Nathálya</button>
 			</div>
 
 			<div class="memberPic">
-				<h3 class="hidden">Nathálya Menezes</h3>
+				<h2>Tallyta Triolo</h2>
 					<img src="img/Tallyta-Triolo.jpg" alt="Tallyta Triolo">
-						<button class="teamBtn" id="tallyButton" data-member="tally" >Tallyta Triolo</button>
+						<button id="tallyButton" data-member="tally" >Learn about Tallyta</button>
 			</div>
 		</section>
 		
 	</main>
 	<div id="overlayPopup">
+		<div id="memberInfo">
 			<button id="closeBtn">X</button>
-			<img src="img/nath-profile.jpg" alt="Member Profile" id="memberProfile" data-member="nath">	
+			<img src="./img/nath-profile.jpg" alt="Member Profile" id="memberProfile" data-member="nath">
+		</div>		
 	</div>
     <script src="js/main.js"></script>
 </body>
