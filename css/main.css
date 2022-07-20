@@ -5,46 +5,44 @@ Author: Nathalya Menezes and Tallyta Triollo
 Version: 1.0
 */
 
-.hidden {
-	display: none;
-}
 
 body {
 	background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-position: fixed;
-	background-size: cover;
+    background-size: cover;
 
-}
-
-main {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	top: 20px;
-	color: #f2f2f2;
-	font-size: 16px;
-	font-family:Arial, Helvetica, sans-serif;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: #fff;
-    background-color: #baa08e;
+    background-color: rgb(109, 95, 85);
     margin-top: 5px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     padding: 10px;
     text-align: center;
-	border-radius: 15px;
+	border-radius: 30px;
  }
+
+
+h2 {
+	font-size: 18px;
+    color:#ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	background-color: rgba(109, 95, 85, 0.605);
+	padding: 10px 30px;
+	border-radius: 30px;
+}
 
 
 /* Team Members start */
 
 #memberSection {
-	width: 70%;
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -57,35 +55,27 @@ h1 {
 	align-items: center;
 }
 
-h2 {
-	font-size: 20px;
-    color: #5c4b3f;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	text-transform: uppercase;
-
-}
 
 /* Team Members end */
 
 
 /* Buttons Profile starts */
 
-.teamBtn {
+#nathButton, #tallyButton {
 	background-color: #baa08e;
 	color: #fff;
 	border: none;
 	border-radius: 30px;
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
 	margin-top: 30px;
 	width: 250px;
 	height: 40px;
-	font-weight: 400;
-	text-transform: uppercase;
 }
 
-.teamBtn:hover {
+#nathButton:hover, #tallyButton:hover {
 	cursor: pointer;
 	background-color: #5c4b3f;
 }
@@ -95,21 +85,20 @@ h2 {
 /* Profile Team Members */
 
 
-#overlayPopup {
-	position: relative;
-	padding-top: 20px;
-	width: 760px;
+#memberInfo {
+	width: 500px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	align-items: center;
+	padding-top: 2em;
 }
 
-#overlayPopup img {
+#memberInfo img {
 	width: 760px;
-	height: 520px;	
+	height: 520px;
 	border-radius: 20px;
-	margin-top: 40px;
 }
 
 #closeBtn {
@@ -118,10 +107,30 @@ h2 {
 	width: 50px;
 	height: 50px;
 	position: absolute;
-    margin-left: 750px;
-	margin-top: 40px;
+    margin-left: 850px;
 	background-color: #5c4b3f;
 	border-radius: 10px;
+	cursor: pointer;
+}
+
+#overlayPopup {
+	position: fixed;
+	display: none;
+	width: 80%;
+	height: 80%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #5c4b3f74;
+	border-radius: 20px;
+	flex-direction: column;
+	z-index: 1000;
+}
+
+.show-overlayPopup {
+	display: block;
 }
 
 /* Profile Team Members end */
